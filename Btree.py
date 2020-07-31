@@ -3,9 +3,9 @@
 class TreeNode:
 	def __init__(self, x, name):
 		self.name = name
-        self.val = x
-        self.left = None
-        self.right = None
+	self.val = x
+	self.left = None
+	self.right = None
         
 n1 = TreeNode(1, "n1")
 n2 = TreeNode(0, "n2")
@@ -39,3 +39,5 @@ def pruneTree( root: TreeNode ):
         return True
     else: 
         return False
+
+pruneTree(n1)
