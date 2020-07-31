@@ -2,7 +2,7 @@
 
 class TreeNode:
 	def __init__(self, x, name):
-		self.name = name
+	self.name = name
 	self.val = x
 	self.left = None
 	self.right = None
@@ -32,7 +32,7 @@ def pruneTree( root: TreeNode ):
     else:
         rightIsDeleted = pruneTree(root.right)
 
-    if leftIsDeleted and rightIsDeleted and root.val == 0:
+	if leftIsDeleted and rightIsDeleted and root.val == 0:
         print("删除节点:",root.name)
         print("值:",root.val)
         root = None
